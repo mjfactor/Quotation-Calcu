@@ -1,0 +1,11 @@
+MANIFEST.in
+pyproject.toml
+setup.py
+quotation/__init__.py
+quotation/main.py
+quotation.egg-info/PKG-INFO
+quotation.egg-info/SOURCES.txt
+quotation.egg-info/dependency_links.txt
+quotation.egg-info/top_level.txt
+tests/__init__.py
+tests/main.py

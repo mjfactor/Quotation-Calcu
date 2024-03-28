@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: quotation
+Version: 0.0.1
+Summary: A simple quotation application
+Home-page: https://github.com/mjfactor/Quotation-Calcu
+Author: mjfactor
+Author-email: emjayfactor@gmail.com
+Project-URL: Source, https://github.com/mjfactor/Quotation-Calcu
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Quotation Calcu
+
+This is a simple quotation calculator that calculates the total cost of a quotation based on the number of items and the cost of each item.
+
+## Installation
