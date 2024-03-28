@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name="quotation",
-    version="0.0.1",
+    version="1.0",
     author="mjfactor",
     author_email="emjayfactor@gmail.com",
     description ="A simple quotation application",
