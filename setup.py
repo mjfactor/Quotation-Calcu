@@ -3,8 +3,8 @@ import setuptools
 import subprocess
 
 # Get Latest Version via tag
-version = subprocess.check_output(["git", "describe", "--tags"]).strip().decode("utf-8")
-
+version = subprocess.check_output(["git", "tag"]).strip().decode("utf-8")
+print(version)
 setuptools.setup(
     name="quotation",
     version=version,
