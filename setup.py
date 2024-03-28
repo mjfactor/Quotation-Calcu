@@ -11,7 +11,6 @@ from os import path
 HERE = path.abspath(path.dirname(__file__))
 
 # Get latest git tag
-# Get latest git tag
 raw_version = subprocess.check_output(["git", "describe", "--tags"]).strip().decode("utf-8")
 
 # Make the version PEP 440 compliant
