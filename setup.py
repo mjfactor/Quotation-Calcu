@@ -1,12 +1,16 @@
 import pathlib
 import setuptools
+import subprocess
+
+# Get Latest Version via tag
+version = subprocess.check_output(["git", "describe", "--tags"]).strip().decode("utf-8")
 
 setuptools.setup(
     name="quotation",
-    version="1.0",
+    version=version,
     author="mjfactor",
     author_email="emjayfactor@gmail.com",
-    description ="A simple quotation application",
+    description="A simple quotation application",
     long_description=pathlib.Path("README.md").read_text(),
     long_description_content_type="text/markdown",
     url="https://github.com/mjfactor/Quotation-Calcu",
