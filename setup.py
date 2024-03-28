@@ -1,9 +1,14 @@
 import pathlib
 import setuptools
+import subprocess
+
+
+# Get the current version
+version = subprocess.run(["git", "tag"], check=True, stdout=subprocess.PIPE)
 
 setuptools.setup(
     name="quotation",
-    version="0",
+    version=version.stdout.decode("utf-8").strip(),
     author="mjfactor",
     author_email="emjayfactor@gmail.com",
     description="A simple quotation application",
