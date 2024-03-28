@@ -4,11 +4,11 @@ import subprocess
 
 
 # Get the current version
-version = subprocess.run(["git", "tag"], check=True, stdout=subprocess.PIPE)
+version = subprocess.check_output(["git", "tag"]).strip().decode("utf-8")
 
 setuptools.setup(
     name="quotation",
-    version=version.stdout.decode("utf-8").strip(),
+    version=version,
     author="mjfactor",
     author_email="emjayfactor@gmail.com",
     description="A simple quotation application",
