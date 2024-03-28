@@ -1,13 +1,16 @@
 import pathlib
 import setuptools
 import subprocess
+import os
+
+os.chdir(os.path.abspath(os.path.dirname(__file__)))
 
 # Get Latest Version via tag
-version = subprocess.check_output(["git", "tag"]).strip().decode("utf-8")
-print(version)
+
+
 setuptools.setup(
     name="quotation",
-    version=version,
+    version="0",
     author="mjfactor",
     author_email="emjayfactor@gmail.com",
     description="A simple quotation application",
@@ -27,5 +30,4 @@ setuptools.setup(
     ],
     python_requires=">=3.10",
     include_package_data=True,
-
 )
