@@ -1,12 +1,5 @@
 import pathlib
 import setuptools
-import subprocess
-import os
-
-os.chdir(os.path.abspath(os.path.dirname(__file__)))
-
-# Get Latest Version via tag
-
 
 setuptools.setup(
     name="quotation",
